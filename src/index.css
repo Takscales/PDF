@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", "EB Garamond", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer utilities {
+  /* Editorial refined custom scrollbars */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(165, 162, 158, 0.35);
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(165, 162, 158, 0.65);
+  }
+}
+
+@media print {
+  #app-header,
+  #app-sidebar,
+  #annotation-floating-toolbar,
+  #floating-search-bar {
+    display: none !important;
+  }
+  body, html {
+    background: white !important;
+    color: black !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PDF Reader",
+  "description": "A clean, modern PDF reader with light and dark mode, thumbnail sidebar, document search, and reading enhancements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
